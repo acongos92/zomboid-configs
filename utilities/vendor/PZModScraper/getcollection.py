@@ -123,7 +123,7 @@ parser.add_argument('-e', '--exclude', metavar='abc,def,ghi',\
     type=str, nargs="?", default="", action=splitargs,\
     help="List of Mod IDs to be excluded from output.")
 parser.add_argument('--configpath', metavar='/path/to/config',\
-    type=str, nargs="?", default=defaultfilepath, action=splitargs,\
+    type=str, nargs="?", default=defaultfilepath,\
     help="Path to and name of config file. Defaults to \"config.yaml\" in local dir.")
 parser.add_argument('config', metavar='default',\
     type=str, nargs="?", default="none",\
