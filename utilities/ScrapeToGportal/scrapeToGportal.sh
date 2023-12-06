@@ -73,11 +73,12 @@ EOF
 
 # Step 5: Uploading Updated Configuration
 upload_config() {
-    FTP_COMMANDS=$1
-    ftp -inv $FTP_HOST_AND_PORT << EOF
+    fullFile=$SCRIPT_DIR/$SERVER_NAME.ini
+    echo "update_server_config"
+    ftp -invp $FTP_HOST_AND_PORT << EOF
     user $FTP_USERNAME $FTP_PASSWORD
-    $FTP_COMMANDS
-    quit
+    put $fullFile Server/$SERVER_NAME.ini
+    bye
 EOF
 }
 
@@ -86,4 +87,4 @@ generate_yaml_config
 run_mod_scraper
 parse_mod_data
 update_server_config
-
+upload_config
