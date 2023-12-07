@@ -7,4 +7,4 @@ This project contains certain server configurations and zomboid server managemen
 
 ## Credit 
 
-(https://github.com/TrainDoctor/PZModScraper)[PZModScraper]
+[PZModScraper](https://github.com/TrainDoctor/PZModScraper)
