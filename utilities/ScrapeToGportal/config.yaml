@@ -1,4 +1,4 @@
 default:
-  apikey: "$API_KEY"
+  apikey: ""
   collections: ["3102985554"]
-  exclusions: ["NotARealThing"]
+  exclusions: ["MedicineMoodlesSkillRequirements"]
